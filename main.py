@@ -6,8 +6,10 @@ from google.genai import types
 from gtts import gTTS
 import os
 import tempfile
-CLÉ_API = os.environ.obtenir("CLÉ_API_GEMINI", "")
-client = génai.Client(api_key=CLÉ_API)
+import time
+
+API_KEY = os.environ.get("GEMINI_API_KEY", "")
+client = genai.Client(api_key=API_KEY)
 conversation_historique = []
 
 def texte_vers_audio(texte):
