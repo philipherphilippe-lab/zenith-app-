@@ -1,0 +1,5 @@
+flet>=0.25.0
+flet-audio
+flet-audio-recorder
+google-genai
+gTTS
